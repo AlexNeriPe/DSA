@@ -2,13 +2,14 @@ public class ReverseArray {
 
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6};
-        printArray(arr, arr.length);
-        reverseArray(arr, arr.length - 1);
+        int end = arr.length - 1;
+        printArray(arr, end);
+        reverseArray(arr, end);
         System.out.println("The array reversed is: ");
-        printArray(arr, arr.length);
+        printArray(arr, end);
         System.out.println("The array reversed again using a recursive method: ");
-        reverseArrayRecursive(arr, 0,arr.length - 1);
-        printArray(arr, arr.length);
+        reverseArrayRecursive(arr, 0,end);
+        printArray(arr, end);
     }
 
     static void printArray(int[] arr, int size){
